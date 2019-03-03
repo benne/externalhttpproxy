@@ -1,5 +1,7 @@
 # External HTTP proxy
 
+[![Build status](https://dev.azure.com/Benne/External%20HTTP%20Proxy/_apis/build/status/External%20HTTP%20Proxy%20CI)](https://dev.azure.com/Benne/External%20HTTP%20Proxy/_build/latest?definitionId=4)
+
 Allows a Azure Function App to provide the middle man HTTP proxy between external inbound HTTP calls, and an internal system regularly polling the Azure Function App for inbound data.
 
 ## Concept
