@@ -5,9 +5,11 @@ Allows a Azure Function App to provide the middle man HTTP proxy between externa
 ## Concept
 
 Inbound external HTTP request (POST or GET) with payload:
+
 `http(s)://<name>.azurewebsites.net/api/inbound/{endpoint?}`
 
 Get inbound external HTTP request stored within Azure Table Storage:
+
 `http(s)://<name>.azurewebsites.net/api/outbound/{endpoint?}`
 
 Data will be stored in Azure Table Storage for multiple endpoints. If multiple calls to a specific inbound endpoint is invoked, before the data is retrieved by the outbound endpoint, the data is overwritten for that specific endpoint.
